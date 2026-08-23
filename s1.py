@@ -511,8 +511,7 @@ elif opt == "Visualization":
     # Clean Data Load 
     try:
         df_clean = pd.read_csv("cleaned_airlines_flights_data.csv")
-    except Exception as e:
-        st.error(f"Cleaned dataset load: {e}")
+    except Exception :
         df_clean = df
     
 
